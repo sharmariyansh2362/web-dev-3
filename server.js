@@ -6,6 +6,8 @@ const PORT = 3000;
 
 app.use(express.json());
 
+//employee data
+
 const employees = [
     { id: 1, name: "Ansh Sharma", salary: "30000", department: "IT" },
     { id: 2, name: "Rohit Verma", salary: "35000", department: "HR" },
