@@ -41,5 +41,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharmariyansh2362/web-dev-3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sharmariyansh2362/web-dev-3/issues"
+  },
+  "homepage": "https://github.com/sharmariyansh2362/web-dev-3#readme"
 }
