@@ -2,9 +2,11 @@ const express=require('express');
 const app=express();
 const PORT=3000;
 
-const logmiddleware=(req,res,next)=>{   
-    console.log('${req.method} ${req.url}');
-    next();
+const logmiddleware=(req,res,next)=>{  
+    req.name="Riyansh"; 
+    console.log("Request url:",req.url,"req method:",req.method);
+    res.send("hello from middleware");
+    // next();
 }
 
 app.use(logmiddleware);
