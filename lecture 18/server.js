@@ -11,9 +11,16 @@ app.get("/age-check/:age", (req, res) => {
         res.send("You are eligible to vote");
     }
 } catch (error) {
+    next(error);
     res.status(500).json({success: false, message: "age is less than 18"});
 }   });    
 
+app.use((err,req, res, next) => {   
+    res.status(404).json({success: false, message: "Page not found"});
+});
+app.use((req, res) => {+
+    res.status(400).json({success: false, message: "Internal server error"});
+});
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-}); 
+});  
