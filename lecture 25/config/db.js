@@ -4,7 +4,7 @@ const connectDB =  sync()=>{
     try{
         await mongoose.connect("mongodb://localhost:27017/HospitalDB");
     console.log("Database Connected");
-    } catch(error)=>{
+    } catch(error) {
     console.log(error);
     }
 }
